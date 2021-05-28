@@ -8,9 +8,9 @@ class Pessoa {
 class Sac {
     constructor(assunto, nome, email, comentario) {
         this.assunto = assunto,
-            this.nome = nome,
-            this.email = email,
-            this.comentario = comentario;
+        this.nome = nome,
+        this.email = email,
+        his.comentario = comentario;
     }
 }
 
@@ -48,7 +48,7 @@ botaoLgn.addEventListener('click',function(){
     
     
 });
-
+var dados =['','','',''];
 const botaoSac = document.getElementById('btnSac');
 botaoSac.addEventListener('click',function(){
     const listaInputs = document.getElementsByTagName('input');
