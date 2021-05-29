@@ -8,35 +8,36 @@
     <meta name="author" content="Gustavo Carneiro">
     <title>FaleConosco</title>
     <link rel="stylesheet" href="./css/faleconosco.css" type="text/css">
+    <script src="../JS/scrip.js" defer></script>
 </head>
 
 
 <body class="container">
 
     <div id="fale">
-        <form action="tabela.html" method="GET"> 
+        <form action="./portal.html" method="GET"  onsubmit="return validaCamposForm()" > 
             <h1>Fale Conosco</h1>
             <hr> 
             <div> 
                 <label for="idtxtAssunto">Assunto</label><br>
                 <input type="text" name="txtAssunto" id="idtxtAssunto" placeholder="assunto" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
-                pattern="[a-zA-Z]+" required>
+                pattern="[a-zA-Z]+" >
             </div>
                 
             <div>
-                <label for="idtxtNome">Nome</label><br>
-                <input type="text" name="txtNome" id="idtxtNome" placeholder="nome" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" 
-                pattern="[a-zA-Z]+" required>
+                <label for="idtxtNomeSac">Nome</label><br>
+                <input type="text" name="txtNome" id="idtxtNomeSac" placeholder="nome" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" 
+                pattern="[a-zA-Z]+" >
             </div>
 
 
             <div>
-                <label for="idtxtComentario">Comentário</label><br>
-                <textarea type="text" name="txtComentário" id="idtxtComentário" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[a-zA-Z]+" required></textarea>
+                <label for="idtxtComentarioSac">Comentário</label><br>
+                <textarea type="text" name="txtComentário" id="idtxtComentarioSac" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[a-zA-Z]+" ></textarea>
             </div>
 
             <div> 
-                <input type="submit" value="Enviar" /> 
+                <input type="submit" value="Enviar" id="btnEnviarSac" /> 
             </div>
 
             <div class="link">
