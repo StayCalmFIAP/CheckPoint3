@@ -11,21 +11,21 @@
 
 <body class="container">    
     <div id="login">
-        <form action="tabela.html" method="GET" > 
+        <form action="./portal.html" method="GET" onsubmit="return fazerLogon()" > 
             <h1>Login</h1>
             <hr> 
             <div> 
-                <label for="idtxtNm">Primeiro nome</label><br>
-                <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite seu primeiro nome."
+                <label for="idTxtUser">Primeiro nome</label><br>
+                <input type="text" name="txtNm" id="idTxtUser" placeholder="Digite seu primeiro nome."
                         oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
-                        pattern="[a-zA-Z]+" required>
+                        pattern="[a-zA-Z]+" >
             </div>
                 
             <div>
-                <label for="idtxtSenha">Sua senha</label><br>
-                <input type="text" name="txtSenha" id="idtxtSenha" placeholder="1234"
+                <label for="idTxtSenha">Sua senha</label><br>
+                <input type="text" name="TxtSenha" id="idtxtSenha" placeholder="1234"
                     oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
-                    pattern="[A-Z0-9]+" required>
+                    pattern="[A-Z0-9]+" >
             </div>
 
             <div>
@@ -34,8 +34,10 @@
             </div>
                 
             <div> 
-                <input type="submit" value="Logar" /> 
+                <input type="submit" value="Logar" id="btnEnviarA" /> 
+
             </div>
+            <div id ='btnEnviar'></div>
 
             <div class="link">
                 Ainda não tem conta?
