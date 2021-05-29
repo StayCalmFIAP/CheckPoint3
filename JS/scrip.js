@@ -1,5 +1,5 @@
-let rnome = ['Gabriel',];
-let rsenha = ['RM88760',];
+var rnome = ['Gabriel','Debora','Gustavo','Matheus','Ryan',];
+var rsenha = ['RM88760','RM86829','RM88392','RM88286','RM89176',];
 
 function Pessoa(nome, senha) {
     this.nome = nome,
@@ -13,12 +13,33 @@ function Sac(assunto, nome, coment) {
 }
 
 function fazerRegistro() {
-    let userName = idTxtUser.value;
-    let userPass = idTxtPass.value;
+    let controle = true;
+    let userName = idTxtUserR.value;
+    let userPass = idTxtPassR.value;
 
-    const pessoa = new Pessoa(userName, userPass);
-    rnome.push(pessoa.nome);
-    rsenha.push(pessoa.senha);
+    var pessoa = new Pessoa(userName, userPass);
+   
+
+    if (rnome.includes(pessoa.nome) && rsenha.includes(pessoa.senha)) {
+        alert("Usuario ja cadastrado");
+        controle = false;
+        return controle;
+    } else if (pessoa.nome == '' || pessoa.senha == '') {
+        alert('Prencha todos os campos antes de enviar');
+        controle = false;
+        return controle
+    } else if (!rnome.includes(pessoa.nome) && !rsenha.includes(pessoa.senha)) {
+        rnome.push(pessoa.nome);
+        rsenha.push(pessoa.senha);
+        alert(" Usuarios já resgistrados " + rnome)
+        return controle;
+    }
+    
+
+    
+
+    
+  
 }
 
 function fazerLogon() {
@@ -38,9 +59,10 @@ function fazerLogon() {
         controle = false;
         return controle
     } else {
-        alert("Usuario não cadastrado, favor fazer cadastro");
+        alert('Usuario inexistente')
         controle = false;
         return controle
+        
     }
 
 }
@@ -61,12 +83,14 @@ function sac() {
         if (i.value == '') {
             alert('Prencha todos os campos antes de enviar');
             controle = false;
-        } else {
-            alert('Todos os campos foram preenchidos');
-        }
-    }
+            return controle;
+        } 
 
-    return controle;
+        }
+        alert('Todos campos prenchidos');
+    
+    
+    
 
 }
 
