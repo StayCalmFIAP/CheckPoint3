@@ -10,13 +10,19 @@
 <body class="container">
     
     <div id="cadastro">
-        <form>
+        <form action="#" method="GET" onsubmit="return fazerRegistro()">
             <h1>Cadastro</h1>
             <hr>
-            <label for="nome">Seu nome</label><br>
-            <input type="text" id="idTxtUser" name="Nome"  placeholder="Digite seu nome" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')" required><br>
-            <label for="senha">Sua senha</label><br>
-            <input type="text" id="idTxtPass" name="Senha" placeholder="Digite sua senha" pattern="[A-Z0-9]+" oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')" required><br>
+            <div>
+            <label for="idTxtUserR">Seu nome</label><br>
+            <input type="text" id="idTxtUserR" name="Nome"  placeholder="Digite seu nome" pattern="[a-zA-Z]+" 
+            oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')">
+            </div>
+            <div>
+            <label for="idTxtPassR">Sua senha</label>
+            <input type="text" id="idTxtPassR" name="TxtPassR" placeholder="Digite sua senha" pattern="[A-Z0-9]+" 
+            oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')" >
+            </div>
         <div>
             <a href="./portal.html"></a>
                 <input id="submit" type="submit" value="Cadastrar" ><br>  
