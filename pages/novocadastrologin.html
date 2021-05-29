@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se</title>
+    <link rel="stylesheet" href="./styles/novocadastrologin.css">
+    <script src="../JS/scrip.js" defer></script>
+</head>
+<body class="container">
+    
+    <div id="cadastro">
+        <form>
+            <h1>Cadastro</h1>
+            <hr>
+            <label for="nome">Seu nome</label><br>
+            <input type="text" id="idTxtUser" name="Nome"  placeholder="Digite seu nome" pattern="[a-zA-Z]+" oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')" required><br>
+            <label for="senha">Sua senha</label><br>
+            <input type="text" id="idTxtPass" name="Senha" placeholder="Digite sua senha" pattern="[A-Z0-9]+" oninvalid="setCustomValidity('É obrigatorio preenchimento deste campo.')" required><br>
+        <div>
+            <a href="./portal.html"></a>
+                <input id="submit" type="submit" value="Cadastrar" ><br>  
+            
+        </div>            
+
+        <div class="login">
+            Já tem conta?
+            <a href="./index.html">Ir para Login</a>
+        </div>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>
