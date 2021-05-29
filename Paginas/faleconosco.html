@@ -12,10 +12,10 @@
 </head>
 
 
-<body class="container">
+<body class="container" >
 
     <div id="fale">
-        <form action="./portal.html" method="GET"  onsubmit="return validaCamposForm()" > 
+        <form action="./portal.html" method="GET"  onsubmit="return sac()" > 
             <h1>Fale Conosco</h1>
             <hr> 
             <div> 
@@ -33,11 +33,12 @@
 
             <div>
                 <label for="idtxtComentarioSac">Comentário</label><br>
-                <textarea type="text" name="txtComentário" id="idtxtComentarioSac" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[a-zA-Z]+" ></textarea>
+                <textarea type="text" name="txtComentário" 
+                id="idtxtComentarioSac" oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[a-zA-Z]+" ></textarea>
             </div>
 
             <div> 
-                <input type="submit" value="Enviar" id="btnEnviarSac" /> 
+                <input type="submit"  value="Enviar" id="btnEnviar" /> 
             </div>
 
             <div class="link">
