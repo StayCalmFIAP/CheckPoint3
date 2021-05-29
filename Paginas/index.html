@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+</head>
+
+<body class="container">    
+    <div id="login">
+        <form action="tabela.html" method="GET"> 
+            <h1>Login</h1>
+            <hr> 
+            <div> 
+                <label for="idtxtNm">Primeiro nome</label><br>
+                <input type="text" name="txtNm" id="idtxtNm" placeholder="Digite seu primeiro nome."
+                        oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                        pattern="[a-zA-Z]+" required>
+            </div>
+                
+            <div>
+                <label for="idtxtSenha">Sua senha</label><br>
+                <input type="text" name="txtSenha" id="idtxtSenha" placeholder="1234"
+                    oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
+                    pattern="[A-Z0-9]+" required>
+            </div>
+
+            <div>
+                <input type="checkbox" name="chkLogado" id="idChkLogado" value="chk">
+                <label for="idChkLogado">Manter-me logado</label>
+            </div>
+                
+            <div> 
+                <input type="submit" value="Logar" /> 
+            </div>
+
+            <div class="link">
+                Ainda não tem conta?
+                <a href="#paracadastro">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
