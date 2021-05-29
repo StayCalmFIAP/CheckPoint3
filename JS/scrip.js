@@ -26,6 +26,7 @@ function fazerRegistro(){
     
     
 }
+
 function fazerLogon(){
 
     let controle = true;
@@ -34,20 +35,20 @@ function fazerLogon(){
     const pessoa = new Pessoa(userName,userPass)
     if(rnome.includes(pessoa.nome) && !rsenha.includes(pessoa.senha) ){
         alert("Senha incorreta para o usuario");
+        controle = false;
         return controle;
     }else if(rnome.includes(pessoa.nome) && rsenha.includes(pessoa.senha)) {
         return controle;
+    }else if(pessoa.nome == '' || pessoa.senha == ''){
+        alert('Prencha todos os campos antes de enviar');
+        controle = false;
+        return controle
     }else{
         alert("Usuario não cadastrado, favor fazer cadastro");
         controle = false;
         return controle
-     }
-    
-    
-
-   
-    
-    
+    }  
+     
     
  
 }
