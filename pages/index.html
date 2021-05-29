@@ -5,39 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <script src="../JS/scrip.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" type="text/css">
+    <script src="../js/scrip.js" defer></script>
 </head>
 
-<body class="container">    
+<body class="container">
     <div id="login">
-        <form action="./portal.html" method="GET" onsubmit="return fazerLogon()" > 
+        <form action="./portal.html" method="GET" onsubmit="return fazerLogon()">
             <h1>Login</h1>
-            <hr> 
-            <div> 
+            <hr>
+            <div>
                 <label for="idTxtUser">Primeiro nome</label><br>
                 <input type="text" name="txtNm" id="idTxtUser" placeholder="Digite seu primeiro nome."
-                        oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
-                        pattern="[a-zA-Z]+" >
+                    oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[a-zA-Z]+">
             </div>
-                
+
             <div>
                 <label for="idTxtSenha">Sua senha</label><br>
                 <input type="text" name="TxtSenha" id="idtxtSenha" placeholder="1234"
-                    oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')"
-                    pattern="[A-Z0-9]+" >
+                    oninvalid="setCustomValidity('É obrigatório o preenchimento deste campo.')" pattern="[A-Z0-9]+">
             </div>
 
             <div>
                 <input type="checkbox" name="chkLogado" id="idChkLogado" value="chk">
                 <label for="idChkLogado">Manter-me logado</label>
             </div>
-                
-            <div> 
-                <input type="submit" value="Logar" id="btnEnviarA" /> 
+
+            <div>
+                <input type="submit" value="Logar" id="btnEnviarA" />
 
             </div>
-            <div id ='btnEnviar'></div>
+            <div id='btnEnviar'></div>
 
             <div class="link">
                 Ainda não tem conta?
@@ -46,4 +44,5 @@
         </form>
     </div>
 </body>
+
 </html>
