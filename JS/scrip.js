@@ -1,3 +1,4 @@
+//@author Gabriel
 var rnome = ['Gabriel','Debora','Gustavo','Matheus','Ryan',];
 var rsenha = ['RM88760','RM86829','RM88392','RM88286','RM89176',];
 
